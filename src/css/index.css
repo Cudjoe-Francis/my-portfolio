@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.summary-container {
+    box-sizing: unset;
+    padding: 10em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.summary-heading {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,84 @@
+.social-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 3em;
+    background-color: rgb(34, 149, 220);
+    margin-top: 200px;
+  }
+  
+  .icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .icon i {
+    font-size: 24px;
+    color: #000;
+    transition: 0.3s;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -35px;
+    /* background: #3498db; */
+    background: orange;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    transform: translateY(10px);
+  }
+  
+  .icon:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .facebook:hover {
+    background: #1877f2;
+  }
+  .facebook:hover i {
+    color: #fff;
+  }
+  
+  .twitter:hover {
+    background: #1da1f2;
+  }
+  .twitter:hover i {
+    color: #fff;
+  }
+  
+  .instagram:hover {
+    background: #e1306c;
+  }
+  .instagram:hover i {
+    color: #fff;
+  }
+  
+  .github:hover {
+    background: #333;
+  }
+  .github:hover i {
+    color: #fff;
+  }
+  
+  .youtube:hover {
+    background: #ff0000;
+  }
+  .youtube:hover i {
+    color: #fff;
+  }
+  

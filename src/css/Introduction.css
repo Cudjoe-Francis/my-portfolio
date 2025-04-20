@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .intro-container {
+    background-color: rgb(34, 149, 220);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 5vw;
+    gap: 3rem;
+  }
+  
+  .intro-details-container {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    padding: 1rem;
+  }
+  
+  .intro-details-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+    line-height: 1.3;
+  }
+  
+  .intro-details-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #111;
+    max-width: 95%;
+  }
+
+  .view-my-work-btn {
+    border: 3px solid yellow;
+    padding: 6px 12px;
+    background-color: rgb(34, 149, 220);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 2rem;
+    color: #fff;
+    transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    width: 190px;
+    overflow: hidden;
+  }
+  
+  .view-my-work-btn:hover {
+    background-color: yellow;
+    border: 3px solid #fff;
+    color: #000;
+  }
+  
+  .view-my-work-btn::after {
+    content: "→";
+    font-size: 1.3rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%) translateX(-5px);
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+  
+  .view-my-work-btn:hover::after {
+    transform: translateY(-50%) translateX(12px);
+    opacity: 1;
+  }
+  
+  .intro-img-container {
+    flex: 1;
+    min-width: 250px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .personal-picture-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* === Mobile & Tablet === */
+  @media (max-width: 768px) {
+    .intro-container {
+      flex-direction: column-reverse;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+  
+    .intro-details-container {
+      padding: 0;
+    }
+  
+    .intro-details-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .intro-details-container p {
+      font-size: 1rem;
+      margin: 0 auto;
+    }
+  
+    .view-my-work-btn {
+      font-size: 1rem;
+      padding: 0.6em 1.5em;
+    }
+  }
+  

@@ -25,3 +25,5 @@ const App = () => {
 };
 
 export default App;
+
+  // "homepage": "https://Cudjoe-Francis.github.io/my-portfolio/",

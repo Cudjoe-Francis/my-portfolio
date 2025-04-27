@@ -1,6 +1,7 @@
 import React from 'react'
 import "../css/Introduction.css"
-import myImage from "../assets/myImage.JPEG"
+// import myImage from "../assets/myImage.JPEG"
+import PUMA from "../assets/PUMA.JPEG"
 
 const Introduction = () => {
   return (
@@ -21,7 +22,7 @@ const Introduction = () => {
       </div>
       <div className="intro-img-container">
         <img
-          src={myImage}
+          src={PUMA}
           alt="Personal Picture"
           className="personal-picture-img"
         />

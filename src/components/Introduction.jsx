@@ -1,7 +1,7 @@
 import React from 'react'
 import "../css/Introduction.css"
 // import myImage from "../assets/myImage.JPEG"
-import PUMA from "../assets/PUMA.JPEG"
+import PUMA from "../assets/PUMA.jpg"
 
 const Introduction = () => {
   return (
